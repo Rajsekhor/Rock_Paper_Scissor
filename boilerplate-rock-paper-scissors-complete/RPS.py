@@ -3,10 +3,10 @@
 
 
 
-dict = {}   #a dictionary
+dictionary = {}
 
 def player(prev_play, opponent_history=[]):
-  global dict
+  global dictionary
 
   n = 6 #I found that 6 provides an ideal performence. You can try other numbers too for better result
 
@@ -18,18 +18,18 @@ def player(prev_play, opponent_history=[]):
   if len(opponent_history)>n:
     inp = "".join(opponent_history[-n:])
 
-    if "".join(opponent_history[-(n+1):]) in dict.keys():
-      dict["".join(opponent_history[-(n+1):])]+=1
+    if "".join(opponent_history[-(n+1):]) in dictionary.keys():
+      dictionary["".join(opponent_history[-(n+1):])]+=1
     else:
-      dict["".join(opponent_history[-(n+1):])]=1
+      dictionary["".join(opponent_history[-(n+1):])]=1
 
     possible =[inp+"R", inp+"P", inp+"S"]
 
     for i in possible:
-      if not i in dict.keys():
-        dict[i] = 0
+      if not i in dictionary.keys():
+        dictionary[i] = 0
 
-    predict = max(possible, key=lambda key: dict[key])
+    predict = max(possible, key=lambda key: dictionary[key])
 
     if predict[-1] == "P":
       guess = "S"
