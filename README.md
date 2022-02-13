@@ -14,3 +14,7 @@ Problem Link : https://replit.com/github/freeCodeCamp/boilerplate-rock-paper-sci
 # References 
 
 https://forum.freecodecamp.org/t/machine-learning-with-python-projects-rock-paper-scissors/412794/5
+
+https://www.geeksforgeeks.org/python-dictionary-keys-method/
+
+https://stackoverflow.com/questions/13669252/what-is-key-lambda#:~:text=In%20Python%2C%20lambda%20is%20a%20keyword%20used%20to,%28s%29%20and%20returns%20value%20of%20data%20%2F%20expression.
